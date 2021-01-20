@@ -4,8 +4,8 @@ version: '3.1'
 services:
 
   db:
-    image: mysql:5.7
-    command: --default-authentication-plugin=mysql_native_password
+    image: mysql:5.7.27
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8 --collation-server=utf8_general_ci --lower_case_table_names=1 --sql_mode=allow_invalid_dates
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: pass
