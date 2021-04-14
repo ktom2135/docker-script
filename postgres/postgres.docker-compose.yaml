@@ -9,9 +9,11 @@ services:
     environment:
       POSTGRES_PASSWORD: pass
       POSTGRES_USER: root
-
-  adminer:
-    image: adminer
-    restart: always
     ports:
-      - 8087:8080
+      - 5432:5432
+
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8087:8080
