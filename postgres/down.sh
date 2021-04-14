@@ -1,0 +1,1 @@
+docker-compose -f postgres.docker-compose.yaml down
