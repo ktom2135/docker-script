@@ -1,0 +1,9 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  mq:
+    image: rabbitmq:3-management
+    restart: always
+    ports:
+      - 15672:15672
