@@ -1,1 +1,1 @@
-docker-compose -f redis.docker-compose.yaml down
+podman-compose -f redis.docker-compose.yaml down

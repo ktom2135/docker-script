@@ -1,1 +1,1 @@
-docker-compose -f mssqlserver.docker-compose.yaml up
+podman-compose -f mssqlserver.docker-compose.yaml up

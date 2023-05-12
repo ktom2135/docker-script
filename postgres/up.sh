@@ -1,1 +1,1 @@
-docker-compose -f postgres.docker-compose.yaml up
+podman-compose -f postgres.docker-compose.yaml up
