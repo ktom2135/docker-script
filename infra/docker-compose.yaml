@@ -8,6 +8,7 @@ services:
     environment:
       ACCEPT_EULA: 'Y'
       SA_PASSWORD: dockerSql2017
+      TZ: Asia/Shanghai
     ports:
        - "1433:1433"
     # volumes:
@@ -17,6 +18,12 @@ services:
     container_name: redis
     ports:
     - 6379:6379
+  # plantuml:
+  #   image: plantuml/plantuml-server:jetty
+  #   container_name: plantuml-server
+  #   ports:
+  #   - 8080:8080
+    
     #volumes:
     #- [your host path]:/data    
   # elasticsearch: 
